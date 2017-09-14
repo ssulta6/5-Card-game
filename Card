@@ -1,0 +1,27 @@
+/*
+ * This class contains about card's 2 section identity, suit and hand.
+ *
+ */
+package cardgame;
+public class Card implements Comparable<Card>
+{
+	public int suit;
+	public int rank;
+	public Card hand;
+	//This method is comparing card's current card's rank with previous card.
+	@Override 
+	public int compareTo(Card card) 
+	{
+	     if (this.rank == (card.rank)) {
+	            return 0;}
+	     else if ((this.rank) > (card.rank))
+	     	{ 
+	         return 1;
+	        }
+	     else
+	     {
+	           return -1;
+	     }
+	}
+	
+}
